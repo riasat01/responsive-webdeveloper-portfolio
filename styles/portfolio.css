@@ -152,6 +152,7 @@ main section {
     margin: 0;
     color: #757575;
 }
+/* skills section */
 
 #what-i-do-description {
     padding: 30px 150px;
@@ -259,14 +260,17 @@ textarea {
 }
 /* responsive section */
 @media screen and (max-width:576px) {
-    .resume-container,.skills-container {
+    .resume-container,.skills-container,.about-info-container {
         flex-direction: column;
+    }
+    #what-i-do-description,.about {
+        padding: 30px;
+    }
+    .about-info-container{
+        gap: 50px;
     }
     .skill{
         margin: 1px;
-    }
-    #what-i-do-description {
-        padding: 30px;
     }
     footer {
         flex-direction: column;
@@ -284,11 +288,14 @@ textarea {
     }
 }
 @media screen and (min-width:576px) and (max-width:992px) {
-    .skills-container{
+    .skills-container,.about-info-container{
         display: grid;
         grid-template-columns: repeat(2,1fr);
     }
-    #what-i-do-description {
+    .about-info-container{
+        grid-row-gap: 50px;
+    }
+    #what-i-do-description,.about {
         padding: 30px;
     }
     footer{
