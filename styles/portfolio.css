@@ -257,8 +257,11 @@ textarea {
 .temp{
     display: none;
 }
-
+/* responsive section */
 @media screen and (max-width:576px) {
+    .resume-container {
+        flex-direction: column;
+    }
     footer {
         flex-direction: column;
         padding: 20px;
@@ -271,8 +274,7 @@ textarea {
     .contact input[type="text"],
     input[type="email"],
     textarea {
-        width: 80%;
-        margin: auto;
+        max-width: 80%;
     }
 }
 @media screen and (min-width:576px) and (max-width:992px) {
@@ -283,7 +285,6 @@ textarea {
     .contact input[type="text"],
     input[type="email"],
     textarea {
-        width: 80%;
-        margin: auto;
+        width: 80%; 
     }
 }
