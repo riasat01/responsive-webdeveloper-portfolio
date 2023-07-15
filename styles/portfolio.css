@@ -86,6 +86,7 @@ nav a {
 .banner {
     padding: 30px 30px 0 150px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -260,11 +261,31 @@ textarea {
 }
 /* responsive section */
 @media screen and (max-width:576px) {
-    .resume-container,.skills-container,.about-info-container {
+    .resume-container,.skills-container,.about-info-container,.banner,.header,nav,ul {
         flex-direction: column;
     }
-    #what-i-do-description,.about {
+    #what-i-do-description,.about,.banner {
         padding: 30px;
+    }
+    /* .header{
+        background-image: none;
+    } */
+    nav ,ul{
+        margin: 0;
+        justify-content: center;
+    }
+    ul{
+        padding: 0;
+    }
+    ul li{
+        margin: 10px 0;
+    }
+    .banner-content,.profile-picture {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .profile-picture{
+        margin-bottom: -30px;
     }
     .about-info-container{
         gap: 50px;
@@ -291,6 +312,12 @@ textarea {
     .skills-container,.about-info-container{
         display: grid;
         grid-template-columns: repeat(2,1fr);
+    }
+    /* .header{
+        background-size:cover,contain;
+    } */
+    .btn-secondary,nav>ul>li{
+        margin-top: 10px;
     }
     .about-info-container{
         grid-row-gap: 50px;
