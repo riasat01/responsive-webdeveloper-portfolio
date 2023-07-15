@@ -259,8 +259,14 @@ textarea {
 }
 /* responsive section */
 @media screen and (max-width:576px) {
-    .resume-container {
+    .resume-container,.skills-container {
         flex-direction: column;
+    }
+    .skill{
+        margin: 1px;
+    }
+    #what-i-do-description {
+        padding: 30px;
     }
     footer {
         flex-direction: column;
@@ -278,6 +284,13 @@ textarea {
     }
 }
 @media screen and (min-width:576px) and (max-width:992px) {
+    .skills-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    #what-i-do-description {
+        padding: 30px;
+    }
     footer{
         padding: 35px;
         gap: 35px;
